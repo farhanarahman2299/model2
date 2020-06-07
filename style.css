@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; 
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+}
+.container {
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.heading {
+    text-align: center;
+    margin: 1rem 0;
+}
+.menu__item {
+    width: 31.2757%;
+    float: left;
+    padding: 1rem;
+    margin: 1rem;
+    background-color:#ccc;
+    border: 1.5px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 991px) {
+    .item-1,
+    .item-2 {
+        width: 46.9135%;
+    }
+    .item-3 {
+        width: 96.8271%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .menu__item {width: 97%}
+}
+.menu__title {
+    display: inline-block;
+    font-size: 150%;
+    padding: .5rem 5rem;
+    margin-bottom: 1rem;
+    color: black;
+    align-self: flex-end;
+}
+.title-1 {
+    background-color: lightpink;
+     border: 1px solid black;
+}
+.title-2 {
+    color: white;
+    background-color: red;
+     border: 1px solid black;
+}
+.title-3 {
+    background-color:yellow;
+     border: 1px solid black;
+}
+.menu__description {
+    font-size: 125%;
+    color: black;
+}
